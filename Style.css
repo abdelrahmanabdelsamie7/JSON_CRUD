@@ -1,0 +1,103 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+} 
+body 
+{
+    background-color: #0e2445 ;  
+} 
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-shadow: 0px 0px 20px #5682c0 ; 
+}
+.card 
+{
+    border: none;
+    background-color: #14325e ;  
+    box-shadow: 2px 2px 2px 10px #04152d;
+    padding: 10px;
+} 
+input , select 
+{
+    border: none !important;
+    text-align: center;
+    background-color: #0e2445 !important; 
+    color: white !important ;
+}
+table 
+{
+    background-color: #04152d; 
+    color: #0dcaf0 !important;
+}
+.none 
+{
+    display: none;
+}
+#tbody i
+{
+    font-size: 17px ;
+    cursor: pointer;
+}
+.modal 
+{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    display: none ; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: rgba(54, 60, 141, 0.4); 
+    color: #000; 
+    width: 100%; 
+    height: 100%; 
+} 
+.modal .card 
+{
+    background-color: #0e2445; 
+    color: #0dcaf0; 
+    width: 500px;  
+}
+.modal .card .card-header
+{
+    font-size: 29px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: bold; 
+    color: #0dcaf0 ; 
+    background-color: rgba(0, 57, 83, 0.633);
+}
+.x-mark 
+{
+    float: right; 
+    margin-top: 7px; 
+    color: rantiquewhite; 
+    background-color: #0e2445;  
+    cursor: pointer;
+}
+.footer h6
+{
+   font-size: 16px;  
+   font-style: italic; 
+   cursor: pointer;
+   color: #0dcaf0;
+   text-shadow:  0 0 5px #89e9fc ;
+   
+}
+.footer h6 span 
+{
+    color: #0dcaf0;
+}
+ .footer span  a i
+ {
+     font-size: 17px; 
+     font-weight: 220; 
+     color:#0dcaf0 ;
+     padding: 9px;
+     cursor: pointer;
+    text-shadow: 0 0 5px #89e9fc;
+ }
+ .footer span i:hover 
+ {
+    color: #3016b3;  
+    transform: scale(1.3);
+ }

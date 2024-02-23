@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <h1 class="text-center text-info fw-bold my-4 display-3">JSON CRUD</h1>
+    <div class="container col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h6  id="hNoEmployee" class="text-danger text-center fs-6 none">Please Enter Your Data</h6>
+          <div class="row">
+            <div class="col-md-6 my-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Employee Name"
+                id="Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Employee Position"
+                id="Position"
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="row" id="inputSalary">
+            <div class="col-md-3 my-2">
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Gross" />
+              </div>
+            </div>
+            <div class="col-md-2 my-2">
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Tax%" />
+              </div>
+            </div>
+            <div class="col-md-3 my-2">
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="TranCost"
+                />
+              </div>
+            </div>
+            <div class="col-md-2 my-2">
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Bonous"
+                />
+              </div>
+            </div>
+            <div class="col-md-2 my-2">
+              <div class="form-group">
+                <input
+                  type="number"
+                  readonly
+                  class="form-control"
+                  placeholder="Total"
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row my-2">
+            <div class="col-md-6">
+              <div class="form-group">
+                <select class="form-control my-2" id="Department">
+                  <option selected disabled value="Employee Department">
+                    Employee Department
+                  </option>
+                  <option value="HR">HR</option>
+                  <option value="Programmer">Programmer</option>
+                  <option value="Developer">Developer</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Counter"
+                id="Counter"
+              />
+            </div>
+          </div>
+          <div class="d-grid mt-3">
+            <button class="btn btn-outline-info" id="CreateBtn">Create Employee</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center text-info mt-4 fw-bold display-6">List Of All Employess</h1>
+    <div class="container my-1 col-md-12">
+      <div class="row">
+        <div class="d-grid my-2">
+          <button class="btn btn-danger my-2" id="deleteBtn">
+            Delete All , Numbers Of Employess : <span id="spanCounter"></span>
+          </button>
+        </div>
+        <table class="table">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="3">Action</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+    </div>
+
+
+     <div class="footer col-md-12 text-center my-4">
+        <h6>Created By Eng : <span>Abdelrahman Abdelsamie</span> </h6> 
+        <span><a href="https://www.facebook.com/profile.php?id=100005529162067"><i class="fa-brands fa-facebook"></i></a></span>
+        <span><a href="https://www.instagram.com/abdelrahman_marey98/#"><i class="fa-brands fa-instagram"></i></a></span>
+        <span><a href="https://web.whatsapp.com/01129508321/#"><i class="fa-brands fa-whatsapp"></i></a></span>
+    </div>
+
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/9992a75c8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS Link  -->
+    <script src="Main.js"></script>
+  </body>
+</html>
